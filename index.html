@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Notes</title>
+    <script src="javascript.js"></script>
+    <link href="css.css" media="screen" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <button id="add_note" onclick="addNote()">Add Note</button>
+    <div class="note-options" id="note_options">
+      <ul class="note-colors" id="note_colors">
+        <li id="yellow" onclick="noteColor(this.id)">Yellow</li>
+        <li id="green" onclick="noteColor(this.id)">Green</li>
+        <li id="blue" onclick="noteColor(this.id)">Blue</li>
+      </ul>
+      <div class="note-content" id="note_content" contenteditable="true" onkeyup="changeText()">
+        
+      </div>
+      <button id="submit" onclick="submitNote()">Submit</button>
+    </div>
+  </body>
+</html>
+
