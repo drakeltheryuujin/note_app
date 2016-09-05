@@ -1,5 +1,29 @@
+html, body {
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+button {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  border: none;
+  background: #e1e1e1;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+ul {
+  list-style: square;
+  padding-left: 0;
+}
+
+ul li {
+  padding: 10px 20px;
+  border: 1px solid #e1e1e1;
+}
+
 .note-content {
-  border: 1px solid #000;
+  border: 1px solid #e1e1e1;
   outline: none;
   padding: 20px;
   height: 200px;
@@ -7,21 +31,35 @@
 
 .note-options {
   display: none;
+  margin-bottom: 20px;
 }
 
 .note {
   width: 200px;
   height: 200px;
   position: relative;
-  border: 1px solid #000;
+  border: 1px solid #ccc;
   padding: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  float: left;
 }
 
 .actions {
   display: none;
+  width: 200px;
   position: absolute;
   bottom: 0;
   left: 0;
   padding: 20px;
+  border-top: 1px solid #ccc;
+}
+
+.btn-edit {
+  float: right;
+}
+
+.btn-delete {
+  float: left;
 }
 
