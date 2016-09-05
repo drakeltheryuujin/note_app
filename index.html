@@ -7,12 +7,17 @@
     <link href="css.css" media="screen" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <button id="add_note" onclick="addNote()">Add Note</button>
+    <h1>Notes</h1>
+    <div>
+      <button id="add_note" onclick="addNote()">Add Note</button>
+    </div>
     <div class="note-options" id="note_options">
+      <h3>Add a Color</h3>
       <ul class="note-colors" id="note_colors">
-        <li id="yellow" onclick="noteColor(this.id)">Yellow</li>
-        <li id="green" onclick="noteColor(this.id)">Green</li>
-        <li id="blue" onclick="noteColor(this.id)">Blue</li>
+        <li id="lightpink" onclick="noteColor(this.id)">Pink</li>
+        <li id="lightyellow" onclick="noteColor(this.id)">Yellow</li>
+        <li id="palegreen" onclick="noteColor(this.id)">Green</li>
+        <li id="skyblue" onclick="noteColor(this.id)">Blue</li>
       </ul>
       <div class="note-content" id="note_content" contenteditable="true" onkeyup="changeText()">
         
